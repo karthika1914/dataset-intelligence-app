@@ -17,12 +17,12 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 
     for col in df.columns:
         if df[col].dtype in ["int64", "float64"]:
-            df[col].fillna(df[col].mean(), inplace=True)
+            df[col] = df[col].fillna(df[col].mean())
         else:
             if df[col].mode().empty:
-                df[col].fillna("Unknown", inplace=True)
+                df[col] = df[col].fillna("Unknown")
             else:
-                df[col].fillna(df[col].mode()[0], inplace=True)
+                df[col] = df[col].fillna(df[col].mode()[0])
 
     df = df.drop_duplicates()
     return df
