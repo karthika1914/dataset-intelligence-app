@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
-
+DEMO : https://dataset-intelligence-app-wjcuxwfe2d63xg4nhbgy4v.streamlit.app/
 ## 🚀 Overview
 
 The **Auto Dataset Intelligence Engine** is a no-code data science platform where users can upload any CSV file and instantly receive:
